@@ -1,0 +1,7 @@
+Run the following commands sequentially to install Jenkins on your Ubuntu system.
+***********Use code with caution*******************
+
+1. Install Java Prerequisites: Jenkins is built on Java and requires it to run. Update your system and install OpenJDK 21 (or OpenJDK 17):
+
+sudo apt update
+sudo apt install -y fontconfig openjdk-21-jre
