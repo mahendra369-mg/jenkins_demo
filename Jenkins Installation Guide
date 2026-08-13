@@ -5,3 +5,4 @@ Run the following commands sequentially to install Jenkins on your Ubuntu system
 
 sudo apt update
 sudo apt install -y fontconfig openjdk-21-jre
+
