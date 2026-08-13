@@ -18,4 +18,31 @@ sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian
 # Register the Jenkins repository
 echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 
+3. Install JenkinsRefresh your system's package list to recognize the new repository database and install Jenkins:
+bash
+
+sudo apt update
+sudo apt install -y jenkins
+
+
+4. Manage the Jenkins ServiceStart the automation server and set it to launch automatically whenever your system boots:
+bash
+sudo systemctl start jenkins
+sudo systemctl enable Jenkins
+
+Use code with caution.
+
+To confirm that the service started successfully, run:
+bash
+sudo systemctl status Jenkins
+
+
+5. Access JenkinsIf your firewall is active, allow traffic through port 8080 (the default port for Jenkins):
+bash
+sudo ufw allow 8080
+
+
+Open your browser and navigate to http://your_server_ip:8080.To unlock the UI for the first time, retrieve your temporary setup password by executing this command in your terminal:
+
+********** Use code with caution **********
 
