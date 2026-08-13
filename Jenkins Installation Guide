@@ -6,3 +6,8 @@ Run the following commands sequentially to install Jenkins on your Ubuntu system
 sudo apt update
 sudo apt install -y fontconfig openjdk-21-jre
 
+2. Add the Official Jenkins Repository
+The default Ubuntu repository packages are often outdated. Download the official Jenkins GPG signing key and add the stable repository to your package manager sources:
+bash
+# Create directory for the keyring
+sudo mkdir -p /etc/apt/keyrings
